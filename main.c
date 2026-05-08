@@ -345,8 +345,8 @@ int main(void)
     dtm_event_t result;                    // Result of a DTM operation.
     uint8_t buffer[2] = {0};
 
-    nrf_gpio_cfg_output( 12 );
-    nrf_gpio_pin_write( 12, 1 );
+    // nrf_gpio_cfg_output( 12 );
+    // nrf_gpio_pin_write( 12, 1 );
 
 
     /* Initializing power and clock */
@@ -361,7 +361,7 @@ int main(void)
 
     bsp_board_init(BSP_INIT_LEDS);
     
-    uart_init();
+    // uart_init();
 
     hal_usb_cdc_init();
 
